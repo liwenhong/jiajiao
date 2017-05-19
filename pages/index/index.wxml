@@ -8,3 +8,4 @@
     <text class="user-motto" bindtap="goToHello">{{motto}}</text>
   </view>
 </view>
+

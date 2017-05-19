@@ -1,4 +1,6 @@
 // hello.js
+var Bmob = require('../../utils/bmob.js')
+var PostData = require('../../utils/PostData.js')
 Page({
 
   /**
@@ -19,7 +21,15 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    //此处调用bmob云端函数 --test
+    Bmob.Cloud.run('Test', { "name": "tom" }, {
+      success: function (result) {
+        console.log(result);
+      },
+      error: function (error) {
+        console.log(error)
+      }
+    })
   },
 
   /**
