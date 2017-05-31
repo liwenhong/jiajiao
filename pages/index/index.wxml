@@ -1,23 +1,63 @@
 <!--index.wxml-->
 <view class="container">
-  <!--<view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto" bindtap="goToHello">{{motto}}</text>
-  </view>-->
+<!--顶部幻灯片-->
+<swiper autoplay>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style="width:100%" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
 
-  <view class="row">
-    <view class="col">
+ <view class="row index">
+    <view class="col" bindtap="findTeacher">
       <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <em>FIND</em>
     </view>
    <view class="col">
       <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <em>ACTION</em>
     </view>
      <view class="col">
       <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <em>MESSAGE</em>
     </view>
   </view>
+  <div class="index-jiajiao">
+       <div class="row row-no-padding">
+         <div class="col">
+            <span>最新发布</span>
+         </div>
+         <div class="col">
+            <span>更多</span>
+         </div>
+       </div>
+       <!--发布人头像以及时间行-->
+       <div wx:for="{{[0,1,2,3]}}">
+       <div class="row row-no-padding" >
+         <div class="col">
+            <image src="../../images/icon1.png" style="width:40px;height:100%;border-radius:50%;"></image>
+         </div>
+         <div class="col">
+            <span>2017/05/23</span>
+            <!--<image src="../../images/d10.gif" style="width:40px;height:100%;"></image>-->
+         </div>
+       </div>
+       <!--发布要求以及预约按钮-->
+         <div class="row row-no-padding " >
+         <div class="col col-80">
+            <!--<span>发布内容</span>-->
+            <view>辅导状况:初一数学</view>
+            <view>要求:dksjkfjkdj死定了飞机快冻死了是的健康减肥的精神科积分 四大皆空</view>
+            <view>薪资:面议</view>
+         </div>
+         <div class="col preBtn">
+            <button>预约</button>
+         </div>
+       </div>
+       </div>
+ 
+  </div>
+
 </view>
 

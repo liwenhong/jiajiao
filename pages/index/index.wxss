@@ -8,7 +8,7 @@
 .userinfo-avatar {
   width: 128rpx;
   height: 128rpx;
-  margin: 20rpx;
+  margin: 0rpx auto;
   border-radius: 50%;
 }
 
@@ -18,4 +18,67 @@
 
 .usermotto {
   margin-top: 200px;
+}
+
+.index .col{
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between
+}
+.index .col em{
+  font-size: 12px;
+  margin-top: 5px;
+}
+.index-jiajiao{
+  border:1px solid #edeef0;
+}
+.index-jiajiao .row:nth-child(1){
+  padding:0;
+  height: 25px;
+}
+.index-jiajiao .row:nth-child(2){
+  border-color: #edeef0;
+  border-width: 1px 0;
+  border-style: solid;
+  padding:0;
+  /*height: 40px;*/
+}
+.index-jiajiao .row:nth-child(2) .col{
+  /*line-height: 40px;*/
+  /*padding-left: 10px;*/
+}
+
+.index-jiajiao .row .col span{
+  font-size: 12px;
+  padding-left: 10px;
+}
+.index-jiajiao .row .col:nth-child(2){
+  text-align: right;
+}
+.index-jiajiao .row .col:nth-child(2) span{
+  padding-right: 30px;
+}
+.row + .row {
+  margin-top: 0;
+}
+.faBuInfo{
+  padding-left: 10px;
+}
+.faBuInfo li{
+  display: block;
+  font-size: 14px;
+}
+/*.test{
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  align-content: space-around
+}*/
+.preBtn{
+  align-self: center;
+}
+.pubMsg{
+  border-bottom: 1px solid #edeef0;
 }
