@@ -31,25 +31,40 @@
   font-size: 12px;
   margin-top: 5px;
 }
-.index-jiajiao{
+.pub-more{
+  height: 30px;
   border:1px solid #edeef0;
+}
+.pub-more view:nth-child(1){
+ padding-left: 10px;
+}
+.pub-more view:nth-child(2){
+  text-align: right;
+  padding-right: 30px;
+}
+.index-jiajiao{
+  padding: 0 10px 5px 10px;
+  /*height: 280px;*/
+  /*overflow: auto;*/
 }
 .index-jiajiao .row:nth-child(1){
   padding:0;
-  height: 25px;
+  height: 40px;
+}
+.pub-info .col:nth-child(1){
+  height: 40px;
+}
+.pub-info .col image{
+  width:40px;
+  height:100%;
+  border-radius:50%;
 }
 .index-jiajiao .row:nth-child(2){
   border-color: #edeef0;
   border-width: 1px 0;
   border-style: solid;
   padding:0;
-  /*height: 40px;*/
 }
-.index-jiajiao .row:nth-child(2) .col{
-  /*line-height: 40px;*/
-  /*padding-left: 10px;*/
-}
-
 .index-jiajiao .row .col span{
   font-size: 12px;
   padding-left: 10px;
@@ -59,6 +74,9 @@
 }
 .index-jiajiao .row .col:nth-child(2) span{
   padding-right: 30px;
+}
+.index-jiajiao .col-80 view{
+  line-height: 20px;
 }
 .row + .row {
   margin-top: 0;
@@ -70,15 +88,23 @@
   display: block;
   font-size: 14px;
 }
-/*.test{
-  display: flex;
-  flex-direction: column;
-  height: 80px;
-  align-content: space-around
-}*/
 .preBtn{
   align-self: center;
 }
+.preBtn button{
+  height: 40px;
+  line-height: 40px;
+}
 .pubMsg{
   border-bottom: 1px solid #edeef0;
+}
+
+/*明星教员*/
+.starTeacher{
+  overflow: scroll;
+  width: 120%;
+}
+.starTeacher .col-40{
+  height: 100px;
+  border: 1px solid red;
 }

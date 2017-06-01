@@ -23,20 +23,17 @@
       <em>MESSAGE</em>
     </view>
   </view>
+  <view class="pub-more row row-no-padding row-center">
+    <view class="col">最新发布</view>
+    <view class="col">更多</view>
+    <!--此处要放一个大于符号表示更多-->
+  </view>
   <div class="index-jiajiao">
-       <div class="row row-no-padding">
-         <div class="col">
-            <span>最新发布</span>
-         </div>
-         <div class="col">
-            <span>更多</span>
-         </div>
-       </div>
        <!--发布人头像以及时间行-->
-       <div wx:for="{{[0,1,2,3]}}">
-       <div class="row row-no-padding" >
+       <div wx:for="{{[0,1,2]}}">
+       <div class="row row-no-padding row-center pub-info" >
          <div class="col">
-            <image src="../../images/icon1.png" style="width:40px;height:100%;border-radius:50%;"></image>
+            <image src="../../images/icon1.png"></image>
          </div>
          <div class="col">
             <span>2017/05/23</span>
@@ -56,8 +53,36 @@
          </div>
        </div>
        </div>
- 
   </div>
 
+<!--明星教员-->
+  <view class="pub-more row row-no-padding row-center">
+    <view class="col">明星教员</view>
+    <view class="col">更多</view>
+    <!--此处要放一个大于符号表示更多-->
+  </view>
+  <view class="starTeacher row row-no-padding row-center">
+   <view class="col col-40">
+    <view class="row">
+     <view class="col">头像</view> 
+     <view class="col">文字描述</view> 
+    </view>
+   </view>
+   <view class="col col-40">
+     <view class="row">
+     <view class="col">头像</view> 
+     <view class="col">文字描述</view> 
+    </view>
+   </view>
+   <view class="col col-40">
+     <view class="row">
+     <view class="col">头像</view> 
+     <view class="col">文字描述</view> 
+    </view>
+   </view>
+
+
+
+  </view>
 </view>
 
